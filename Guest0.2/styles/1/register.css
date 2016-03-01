@@ -36,11 +36,16 @@
 	margin:0 0 0 50px;
 }
 #register dl dd input.text{
-	width:220px;
+	width:200px;
 	height:19px;
 	border:1px dashed #333;
 	background:#fff;
 }
 #register dl dd input.yzm{
 	width:60px;
+}
+#register dl dd img#code{
+	position:relative;
+	top:6px;
+	cursor:pointer;
 }

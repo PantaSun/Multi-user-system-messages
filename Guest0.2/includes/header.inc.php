@@ -1,18 +1,30 @@
 <?php 
-	//·ÀÖ¹¶ñÒâµ÷ÓÃ
+	//é˜²æ­¢æ¶æ„è°ƒç”¨
 		if (!defined('IN_TG')){
 			exit("Access Defined!");
 		}
 ?>
 <div id="header">
-	<h1><a href="index.php">¶àÓÃ»§ÁôÑÔÏµÍ³</a></h1>
+	<h1><a href="index.php">ä¸€ä¸ªè®ºå›</a></h1>
 	<ul>
-		<li><a href="index.php">Ê×Ò³</a></li>
-		<li><a href="register.php">×¢²á</a></li>
-		<li>µÇÂ½</li>
-		<li>¸öÈËÖÐÐÄ</li>
-		<li>¹ÜÀí</li>
-		<li>·ç¸ñ</li>
-		<li>ÍË³ö</li>
+		<li><a href="index.php">é¦–é¡µ</a></li>
+		<?php 
+			if (isset($_COOKIE['username'])){
+				echo '<li><a href="member.php">'.$_COOKIE['username'].'Â·ä¸ªäººä¸­å¿ƒ</a></li>';
+				echo "\n";
+			}else {
+				echo '<li><a href="register.php">æ³¨å†Œ</a></li>';
+				echo "\n";
+				echo  '<li><a href="login.php">ç™»å½•</a></li>';
+				echo "\n";
+			}
+		?>
+		<li>ç®¡ç†</li>
+		<li>é£Žæ ¼</li>
+		<?php 
+			if (isset($_COOKIE['username'])){
+				echo '<li><a href="logout.php">é€€å‡º</a></li>';
+			}
+		?>
 	</ul>
 </div >

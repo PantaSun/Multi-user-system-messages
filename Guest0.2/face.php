@@ -1,16 +1,16 @@
  <?php
-		 //¶¨ÒåÒ»¸ö³£Á¿£¬À´»ñÈ¡µ÷ÓÃincludesÖÐÎÄ¼þµÄÈ¨ÏÞ
+		 //å®šä¹‰ä¸€ä¸ªå¸¸é‡ï¼Œæ¥èŽ·å–è°ƒç”¨includesä¸­æ–‡ä»¶çš„æƒé™
 		 define("IN_TG", true);
-		 //×ª»»³ÉÓ²Â·¾¶£¬ËÙ¶È¸ü¿ì
+		 //è½¬æ¢æˆç¡¬è·¯å¾„ï¼Œé€Ÿåº¦æ›´å¿«
 		 require dirname(__FILE__).'/includes/common.inc.php';
-		 //¶¨ÒåÒ»¸ö³£Á¿£¬À´Ö¸¶¨±¾Ò³ÄÚÈÝ
+		 //å®šä¹‰ä¸€ä¸ªå¸¸é‡ï¼Œæ¥æŒ‡å®šæœ¬é¡µå†…å®¹
 		 define('SCRIPT','face');
 	?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=GBK">
-<title>¶àÓÃ»§ÁôÑÔÏµÍ³----Ñ¡ÔñÍ·Ïñ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ä¸€ä¸ªè®ºå›----é€‰æ‹©å¤´åƒ</title>
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
 ?>
@@ -18,10 +18,10 @@
 </head>
  <body>
 			<div id="face">
-					<h3>Ñ¡ÔñÍ·Ïñ</h3>
+					<h3>é€‰æ‹©å¤´åƒ</h3>
 					<dl>
 							<?php foreach (range(1, 20) as $i) {?>
-							<dd><img title="Í·Ïñ<?php echo $i?>" src="face/face<?php echo $i?>.jpg" alt="face/face<?php echo $i?>.jpg" width="100px"  height="100px" ></dd>
+							<dd><img title="å¤´åƒ<?php echo $i?>" src="face/face<?php echo $i?>.jpg" alt="face/face<?php echo $i?>.jpg" width="100px"  height="100px" ></dd>
 							<?php }?>
 					</dl>
 			</div>

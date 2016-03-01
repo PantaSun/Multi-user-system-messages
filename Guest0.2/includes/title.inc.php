@@ -1,9 +1,9 @@
 <?php
-//防止恶意调用
+
 if (!defined('IN_TG')){
 	exit("Access Defined!");
 }
-//防止非Html页面调用
+//闃叉闈瀐tml椤甸潰璋冪敤
 if (!defined('SCRIPT')){
 	exit('SCRIPT ERROR');
 }

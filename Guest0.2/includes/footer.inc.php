@@ -1,11 +1,12 @@
 <?php 
-		//防止恶意调用
+		//闃叉鎭舵剰璋冪敤
 		if (!defined('IN_TG')){
 			exit("Access Defined!");
 		}
+		_close();
 ?>
 <div id="footer">
-		<p>本程序耗时:<?php  echo _runtime() - START_TIME ?>秒</p>
-		<p>版权没有 翻版不究</p>
-		<p>本程序由<span>Pantasun</span>提供</p>
+		<p>鏈▼搴忚�楁椂:<?php  echo _runtime() - START_TIME ?>脙毛</p>
+		<p>鐗堟潈娌℃湁 缈荤増涓嶇┒</p>
+		<p>鏈▼搴忕敱<span>Pantasun</span>鎻愪緵</p>
 </div>
